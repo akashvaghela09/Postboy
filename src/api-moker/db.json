@@ -1,0 +1,36 @@
+{
+  "todo": [
+    {
+      "id": 1,
+      "task": "React",
+      "status": true
+    },
+    {
+      "id": 2,
+      "task": "Redux",
+      "status": true
+    },
+    {
+      "id": 3,
+      "task": "React-Redux",
+      "status": true
+    },
+    {
+      "id": 4,
+      "task": "JavaScript",
+      "status": true
+    },
+    {
+      "id": 5,
+      "task": "HTML",
+      "status": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@mail.com",
+      "password": "admin123"
+    }
+  ]
+}
