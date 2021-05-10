@@ -129,6 +129,7 @@
     background-color: black;
     margin: 10px;
     cursor: pointer;
+    word-wrap: break-all;
 }
 
 .reqHistoryCardMethod {
@@ -144,6 +145,7 @@
     margin-top: 2px;
     margin-left: 5px;
     color: #F28300;
+    white-space: pre-wrap;
 }
 
 .gitHub {
