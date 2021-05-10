@@ -1,32 +1,15 @@
 import { 
-    ADD_FORM_ROW,
-    STORE_BODYDATA_RESPONSE,
-    STORE_REQ_RESPONSE
+    STORE_HISTORY
 } from '../app/actionType'
 
-const storeReqRes = (payload) => {
+const storeHistory = (payload) => {
     return {
-        type: STORE_REQ_RESPONSE,
+        type: STORE_HISTORY,
         payload
     }
 }
 
-const storeBodyData = (payload) => {
-    return {
-        type: STORE_BODYDATA_RESPONSE,
-        payload
-    }
-}
-
-const addFormRow = (payload) => {
-    return {
-        type: ADD_FORM_ROW,
-        payload
-    }
-}
 
 export { 
-    storeReqRes,
-    storeBodyData,
-    addFormRow
+    storeHistory
 }

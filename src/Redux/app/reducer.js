@@ -1,32 +1,18 @@
 import { 
-    ADD_FORM_ROW,
-    STORE_BODYDATA_RESPONSE,
-    STORE_REQ_RESPONSE    
+    STORE_HISTORY
 } from './actionType'
 
 const initialState = {
-    reqRes: [],
-    bodyData: "",
-    formList: []
+    history: []
 }
 
 const reducer = (state = initialState, {type, payload}) => {
     switch (type) {
         
-        case STORE_REQ_RESPONSE:
-            return {
-                ...state,
-                reqRes: payload
-            }
-        case STORE_BODYDATA_RESPONSE:
-            return {
-                ...state,
-                bodyData: payload
-            }
-        case ADD_FORM_ROW:
+        case STORE_HISTORY:
         return {
             ...state,
-            formList: payload
+            history: payload
         }
         default:
             return state

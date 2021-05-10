@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 
 const FormRow = () => {
 
-    const [value, setValueType] = useState("text")
+    const [valueType, setValueType] = useState("text")
+    const [key, setKey] = useState("")
+    const [value, setValue] = useState("")
 
+    console.log(key);
+    console.log(value);
     return (
         <div>
-            <input placeholder="Key"/>
+            <input value={key} onChange={(e) => setKey(e.target.value)} placeholder="Key"/>
             <select>
                 <option value="text" onClick={(e) => setValueType(e.target.value)}>Text</option>
                 <option value="file" onClick={(e) => setValueType(e.target.value)}>File</option>
@@ -14,7 +18,7 @@ const FormRow = () => {
             {
                 value === "file" ?
                 <input type="file" placeholder="Value"/> :
-                <input type="text" placeholder="value"/>
+                <input value={value} onChange={(e) => setValue(e.target.value)} type="text" placeholder="value"/>
             }
         </div>
     )
