@@ -91,9 +91,13 @@ const Home = () => {
             .then((res) => 
                 {   
                     setStatusCode(res.status)
-                    console.log(res.data);
                     if(res.status === 204 || res.status === 200){
                     setJsonData(res.data)
+                    
+                    if(res.status === 204){
+                        alert("Status code : " + res.status)
+                    }
+                    
                 } else {
                     alert(res)
                 }}
@@ -104,7 +108,7 @@ const Home = () => {
         }
     }
 
-    // save hostory in redux
+    // save history in redux
     const saveReq = () => {
         let newReq = [...history, {
             "method": method,
@@ -112,7 +116,6 @@ const Home = () => {
         }]
 
         dispatch(storeHistory(newReq))
-        console.log(history);
     }
 
     // clear history request
@@ -215,6 +218,7 @@ const Home = () => {
                         
                 </div>
             </div>
+
         </div>
     )
 }

@@ -14,3 +14,13 @@
   border-bottom: 2px solid #161c68;
   cursor: pointer;
 }
+
+.gitHub {
+  position: absolute;
+  width: 40px;
+  background-color: white;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
