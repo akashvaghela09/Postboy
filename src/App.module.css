@@ -1,11 +1,16 @@
 .App {
   display: flex;
-  /* width: 100vw; */
-  align-items: center;
   min-height: 100vh;
   height: fit-content;
   background-color: #ced6e0;
   flex-direction: column;
-  /* text-align: center; */
 }
 
+.siteName {
+  padding: 10px;
+  text-align: center;
+  background-color: #1A237E;
+  color: white;
+  border-bottom: 2px solid #161c68;
+  cursor: pointer;
+}
